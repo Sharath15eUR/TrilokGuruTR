@@ -1,0 +1,5 @@
+More On Grep Command
+
+1) List those entries that are 5 letters long and starts with Y?
+
+Command =>  grep -i '^Y....:' result.txt
