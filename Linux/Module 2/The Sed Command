@@ -1,0 +1,8 @@
+The Sed Command
+
+1)Use the same text file seddemo.txt Try to print records from 6th to 12th line.
+
+Command => sed -n '6,12p' seddemo.txt
+
+Explanation => The sed command is a stream editor that can be used to edit text files and streams.
+               The -n option tells the sed command to suppress the default output, which is the entire file.
