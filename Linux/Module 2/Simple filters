@@ -1,0 +1,67 @@
+Simple filters
+
+Questions
+
+Assignement For Topic
+Head
+Assignment i 
+Try what is shown on the video
+Assignment ii 
+1. Try to get the first 10 lines from /etc/passwd
+2. try to get just the first 3 lines from /etc/passwd
+Tail
+Assignment i 
+Try what is shown on the video
+Assignment ii 
+1. Try to get the Last 10 lines from /etc/passwd
+2. Try to get just the Last 3 lines from /etc/passwd
+3. Try to follow the log file /var/log/auth.log
+Sort
+Assignment i 
+Try what is shown on the video
+Assignment ii 
+1. Try to sort the file /etc/passwd in assending order.
+2. Try to sort the file /etc/passwd in decending order.
+3. Try to sort the file /etc/passwd in assending order based on the 3rd
+column.
+4. Try to sort the file /etc/passwd in assending order based on the 3rd
+column and ask sort to look at the thrid column as a whole number.
+Cut
+Assignment i 
+Try what is shown on the video
+Assignment ii 
+1. Try to cut just the usernames from the file /etc/passwd
+Paste
+Assignment i 
+Try what is shown on the video
+Assignment ii 
+1. Create a file alphabets.txt and key in all the 2\6 alphabets each one in
+a new line.
+2. Create a file number.txt and key in 1 to 2\6 each one in a new line.
+3. Try to paste those two files, to see which letter appears at what
+number.
+Paste alphabets.txt numbers.txt
+
+Solutions
+
+1.  vi numbers.txt
+    head numbers.txt
+    head /etc/passwd
+    head -n 3 /etc/passwd
+
+2.  tail numbers.txt
+    tail -n 3 /etc/passwd
+    tail /var/log/auth.log
+
+3.  sort /etc/passwd
+    sort -r /etc/passwd
+    sort -t: -k3n /etc/passwd
+    sort -t: -k3n /etc/passwd
+
+4.  vi marks.txt
+    cut -d: -f1 marks.txt
+    cut -d: -f1 /etc/passwd
+
+5.  vi alphabets.txt
+    vi numbers.txt
+    paste alphabets.txt number.txt
