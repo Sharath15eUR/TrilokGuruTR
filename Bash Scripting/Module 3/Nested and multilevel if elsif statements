@@ -1,0 +1,18 @@
+1) Write a program to output different messages when number is:
+   a. Greater than 3
+   b. Lesser than 3
+   c. Or equal to 3
+   d. Or when the user input is empty
+
+Script => read -p "Enter a number: " usernumber
+          if [[ -z "$input" ]]; then
+              echo "The input is empty."
+          else
+              if [[ "$userinput" -gt 3 ]]; then
+                  echo "The number is greater than 3."
+              elif [[ "$userinput" -lt 3 ]]; then
+                  echo "The number is lesser than 3."
+              else
+                  echo "The number is equal to 3."
+              fi
+          fi
