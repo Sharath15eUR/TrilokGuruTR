@@ -1,0 +1,18 @@
+More on Loops
+
+1) Retype nested-for.sh bash script using nested while loop
+
+ Script =>  for dir in test*; do
+            echo "Files in $dir directory:"
+            echo ""
+
+            while IFS= read -r -d $'\0' file; do
+                echo "$file"
+            done < <(find "$dir" -maxdepth 1 -type f -print0)
+
+            echo "------------------------"
+        done
+
+2) Save your program with the name: nested-while.sh
+
+Command => mv nested-for.sh nested-while.sh
