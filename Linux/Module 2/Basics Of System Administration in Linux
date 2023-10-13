@@ -1,0 +1,34 @@
+Basics Of System Administration in Linux
+
+1) Create a new user account and home directory called "Duck" 
+
+Command => sudo useradd -m Duck
+
+Explanation => The -m option tells the useradd command to create a home directory for the user.
+
+2) Set the user account "Duck's" expirey date as 07 - 01 - 2015
+
+Command => usermod -e 2015-07-01 user1
+
+3) find the id of the user account "Duck"
+
+Command => id -u Duck
+
+4) Type df and du commands and see the output on your terminal.
+
+Command =>  df - The df command displays the amount of free disk space on each mounted filesystem
+            du - The du command displays the disk space usage of files and directories. 
+
+5) Type this command on the terminal and see the output :
+   du -ch *.txt
+
+Solution => display the disk space usage of files with the .txt extension in the current directory.
+            -h => human readable format
+            -c => to show only details regarding the parameter provided
+
+6) Delete the user account "Duck" permanently along with its home folder.
+
+Command => sudo userdel -r Duck
+
+Explanation => delete the user account Duck and its home directory. 
+               -r option tells the userdel command to delete the user's home directory as well as the user account
