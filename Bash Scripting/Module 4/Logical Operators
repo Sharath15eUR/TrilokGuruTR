@@ -1,0 +1,10 @@
+Logical Operators
+
+1) Check whether the file exists and is executable using logical operators.
+    Hint:man test
+
+Script => if [[ -f "$1" && -x "$1" ]]; then
+              echo "File $1 exists and is executable."
+          else
+              echo "File $1 does not exist or is not executable."
+          fi
