@@ -1,0 +1,20 @@
+File Systems 
+
+1)Make a directory structure like this in your home directory
+
+COmmand => mkdir demodir
+           cd demodir
+           mkdir inside_demo also_inside_demo
+           cd also_inside_demo
+           mkdir abc abc_123
+
+Explanation => mkdir -> to create a directory
+               cd -> change directory
+
+2) Remove the also_inside_demo directory
+
+Command => rm -r also_inside_demo
+           rmdir also_inside_demo
+
+Explanation => -r -> to recursively remove all in the directory
+               rmdir -> remove directory if it is empty
