@@ -1,0 +1,27 @@
+File Attributes
+
+1. Create a file abc.txt and change the ownership of this file to some other user on your machine,
+   and also change the group to family.
+
+Command => touch abc.txt
+           sudo useradd newuser
+           sudo groupadd family
+           chown newuser:family abc.txt
+           ls -l abc.txt
+Explanation => chown -> change ownership of files
+               useradd -> Adds a new user
+               groupadd -> Adds a new group
+
+2. Create a file exercise.txt and make it executable.
+
+Command => touch exercise.txt
+           chmod +x exercise.txt
+
+Explanation => Make the file executable using the chmod command
+
+3. Create a file test.txt on your desktop and identify its inode number, also create a softlink
+   for test.txt in your home.
+
+Command => touch test.txt
+           ls -li
+           ln -s /home/user/Desktop/test.txt /home
