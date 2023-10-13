@@ -1,0 +1,7 @@
+More On Sed Command
+
+1) Use the same text file seddemo.txt Try to replace or substitute name Ankit with Ashish
+
+Command => sed 'Ankit/s/Ashish' seddemo.txt
+
+Explanation => The s command tells sed to substitute the matched text with the replacement text
