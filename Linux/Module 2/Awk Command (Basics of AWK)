@@ -1,0 +1,5 @@
+Awk Command (Basics of AWK)
+
+1. Display roll no., stream and marks of Ankit Saraf from the file awkdemo.txt.
+
+Command => awk -F "|" '/Ankit Saraf/ {print $1,$3,$6}' awkdemo.txt
