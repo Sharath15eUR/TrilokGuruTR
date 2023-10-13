@@ -1,0 +1,18 @@
+1) Commands are actually files containing programs, often written in C. How will you find out in which directory does  the file corresponding to the man command resides?
+
+Command => where is man
+           which man
+
+Explanation => the following command to find the location of the man executable file
+
+2) How will you find out what is the use of the ps command.
+
+Command => man ps
+
+Explanation => To display the man page for the ps command
+
+                    or
+
+Command => whatis ps
+
+Explanation => This command shows a single line description about the command
