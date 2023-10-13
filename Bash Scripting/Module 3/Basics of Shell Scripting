@@ -1,0 +1,15 @@
+ Basics of Shell Scripting
+
+1) Write a simple Bash program to get the following system variables:
+    a. pwd
+    b. logname
+
+Command => pwd
+           logname
+
+2) Write a simple Bash program:
+     a. To ask username from user
+     b. Exit the program, if user does not enter anything within 10 seconds
+
+Script =>  read -t 10 -p "Type Your Username : " username
+           echo "$username"
