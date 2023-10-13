@@ -1,0 +1,12 @@
+Arithmetic Comparision
+
+1) Write a program to demonstrate the use of not equal to operator.
+    Hint: -ne
+
+Script => read -p "Guess The Number " num
+          guess=777
+          if [[ "$num" -ne guess ]]; then
+              echo "Sorry The Guess Is Wrong"
+          else
+              echo "You Have Guessed Right"
+          fi
