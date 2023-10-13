@@ -1,0 +1,11 @@
+The Grep Command
+
+1) Explore some other commands like -E, + and ?
+
+Command => The -E option tells the grep command to use extended regular expressions.
+           The + operator in grep matches one or more occurrences of the preceding character
+           The ? operator in grep matches zero or one occurrences of the preceding character
+
+           grep -E "Hello" my_file.txt
+           grep +a my_file.txt
+           grep ?a my_file.txt
