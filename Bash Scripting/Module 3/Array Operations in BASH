@@ -1,0 +1,14 @@
+Array Operations in BASH
+
+ 1) Declare an Array names of length 7 and find
+    a. The total number of elements
+    b. Print all the elements
+    c. Print the 5th element
+
+Script =>  names=("Warren" "Buffet" "Ray" "Dalio" "Steve" "Wozniak" "AJithKumar")
+           echo "${names[@]}"
+           for name in "${names[@]}"
+           do
+              echo "$name"
+           done
+           echo "${names[4]}"
