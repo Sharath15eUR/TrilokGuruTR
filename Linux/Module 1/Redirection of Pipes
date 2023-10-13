@@ -1,0 +1,23 @@
+Redirection of Pipes
+
+1. Create a file name error_log in your current directory. Suppose you do not have any file named aa11 in your current directory. 
+   How  can you redirect the error message to the file error_log when we apply the command "wc -l aa11" ?  
+   How can you ensure that all the error log are appended to the error_log file?
+
+Command => touch error_log
+           wc -l aa11 2> error_log
+           wc -l aa11 2>> error_log
+
+Explanation => > -> redirection 
+               >> -> redirection with appending
+               file descriptor 2 is used for standard error (stderr).
+
+2. Create  files named test1, test2, testa, testb
+   How can you count the number of files starting with test and then having only one digit in their name using only a single line command ?
+
+Command => touch test1 test2 testa testb
+           ls | grep -c "^test[0-9]$"
+
+Explanation => The ls command lists all of the files in the current directory.
+               The grep command filters the output of the ls command to only include files that start with test and then have only one digit in their name.
+               The wc -l command counts the number of lines in the output of the grep command.
