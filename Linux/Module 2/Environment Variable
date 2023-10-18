@@ -6,7 +6,6 @@ Environment Variable
 Command => echo $PS2
            echo "PS2 ="Trilok"" >> ~/.bashrc   
 
-Explanation => The >\u> part of the secondary command prompt is added to tell the shell to print the current username before the secondary command prompt.
 
 2. How can you ensure that the mv command (used for renaming a file) always asks for permission before overwriting an existing destination file ? 
    [ Hint : use alias command ]
